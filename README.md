@@ -1,6 +1,6 @@
 # Proyecto Cracken | Club Crackens de Barranquilla |
 
-https://github.com/afleones/cracken/logo.png
+https://github.com/afleones/cracken/crackens.jpg
 
 Sitio Web del cub de baloncesto Cracken de Barranquilla fundado el 21 de enero del 2020, Bajo la direccion tecnica de Yhony olaya Puerto como "Director Tecnico", Andres Leones Palacio como "Asistente Tecnico" y jancy Camacho como "Preparador Fisico".
 
