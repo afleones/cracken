@@ -12,4 +12,16 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery
+//= require jquery_ujs
+//= require bootstrap-sprockets
 //= require_tree .
+//= bootstrap.min.js
+//= counter.js
+//= fancybox.pack.js
+//= functions.js
+//= isotope.min.js
+//= jquery.countdown.min.js
+//= jquery.js
+//= progressbar.js
+//= slick.slider.min.js

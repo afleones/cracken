@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cracken</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Club Crackens de Barranquilla</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- Main css styles -->
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- Main javascript files -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Include style per-controller - vendor plugins -->
+    <%= stylesheet_link_tag params[:controller] if ::Rails.application.assets.find_asset("#{params[:controller]}.css") %>
+
+    <%= stylesheet_link_tag 'style.css' %>
+    <%= stylesheet_link_tag 'css/bootstrap.css' %>
+    <%= stylesheet_link_tag 'css/font-awesome.css' %>
+    <%= stylesheet_link_tag 'css/flaticon.css' %>
+    <%= stylesheet_link_tag 'css/slick-slider.css' %>
+    <%= stylesheet_link_tag 'css/fancybox.css' %>
+    <%= stylesheet_link_tag 'css/color.css' %>
+    <%= stylesheet_link_tag 'css/responsive.css' %>
   </head>
 
   <body>
-    <%= yield %>
+      <%= render 'layouts/header' %>
+      <%= yield %>
+      <%= render 'layouts/footer' %>
   </body>
+
+  <!-- jQuery (necessary for JavaScript plugins) -->
+  <%= javascript_include_tag 'js/jquery.js'%>
+  <%= javascript_include_tag 'js/bootstrap.min.js'%>
+  <%= javascript_include_tag 'js/slick.slider.min.js'%>
+  <%= javascript_include_tag 'js/jquery.countdown.min.js'%>
+  <%= javascript_include_tag 'js/fancybox.pack.js'%>
+  <%= javascript_include_tag 'js/isotope.min.js'%>
+  <%= javascript_include_tag 'js/progressbar.js'%>
+  <%= javascript_include_tag 'js/counter.js'%>
+  <%= javascript_include_tag 'js/functions.js'%>
+
 </html>
